@@ -201,7 +201,7 @@ app.get('/dishes/filter', async (req, res) => {
   }
 });
 
-  // Get Dishes Sorted by Price
+// Get Dishes Sorted by Price
 async function sortAllDishesByPrice() {
   let query = 'SELECT * FROM dishes ORDER BY price';
   let response = await db.all(query, []);
